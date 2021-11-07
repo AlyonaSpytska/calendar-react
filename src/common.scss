@@ -1,18 +1,28 @@
 .button {
   height: 40px;
-  border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  background-color: #fff;
 }
 
 .icon-button {
   outline: none;
-  border: none;
+  padding: 10px 14px;
+  border: transparent;
+  border-radius: 50%;
   cursor: pointer;
   background: transparent;
+  color: #fff;
+  transition: background-color 0.3s linear;
+
+
+  &:hover {
+    background-color:#cc8dc5;
+    color: #333;
+  }
 }
 
 .modal {

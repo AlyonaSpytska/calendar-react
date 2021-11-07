@@ -1,15 +1,21 @@
 .header {
-  display: flex;
-  height: 60px;
-  padding: 0 48px;
-  align-items: center;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(121,9,100,1) 0%, rgba(204,141,182,1) 52%);
 }
 
 .create-event-btn {
   padding: 0 16px;
+  border-radius: 20px;
 
   &__icon {
     margin-right: 8px;
+    background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -17,14 +23,17 @@
   &__today-btn {
     margin-left: 32px;
     padding: 0 16px;
+    border-radius: 4px;
   }
 
   &__nav-icon {
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   &__displayed-month {
+    font-size: 20px;
+    color: #fff;
     margin-left: 10px;
   }
 }
