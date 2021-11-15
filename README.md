@@ -13,4 +13,4 @@ The tech stack is:
 <li>React</li>
 </ul>
 
-Author: Alyona Spytska
+Author: <a href="https://github.com/SaraFilin">Alyona Spytska<a>
