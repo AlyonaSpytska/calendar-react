@@ -3,12 +3,14 @@ You can use the online version and write down your plans :)
 
 The tech stack is:
 
-HTML5
-CSS3
-Flexbox
-Sass (Scss)
-BEM methodology
-JavaScript
-React
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Flexbox</li>
+<li>Sass (Scss)</li>
+<li>BEM methodology</li>
+<li>JavaScript</li>
+<li>React</li>
+</ul>
 
 Author: Alyona Spytska
