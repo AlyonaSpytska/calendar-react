@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import RedLine from "../redline/RedLine.jsx";
 import Event from "../event/Event";
 import { formatMins } from "../../../src/utils/dateUtils.js";
 
 const Hour = ({ dataHour, hourEvents, onDeleteEvent, dataDay }) => {
   const actualDataOfDay = new Date().getDate() === dataDay ? true : false;
-
+  
   let currentTimeLine;
   if (new Date().getHours() === dataHour && actualDataOfDay) {
     currentTimeLine = <RedLine />;
@@ -41,6 +42,13 @@ const Hour = ({ dataHour, hourEvents, onDeleteEvent, dataDay }) => {
       })}
     </div>
   );
+};
+
+Hour.propTypes = {
+  dataHour: PropTypes.number.isRequired,
+  hourEvents: PropTypes.array.isRequired,
+  onDeleteEvent: PropTypes.func.isRequired,
+  dataDay: PropTypes.number.isRequired,
 };
 
 export default Hour;

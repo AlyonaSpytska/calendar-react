@@ -8,7 +8,7 @@ const RedLine = () => {
   useEffect(() => {
     const interval = setInterval(
       () => setCurrentTimeLine(new Date().getMinutes()),
-      1000
+      1000 * 60
     );
     return () => {
       clearInterval(interval);
