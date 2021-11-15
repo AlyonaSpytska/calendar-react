@@ -1,6 +1,7 @@
 You don’t have to buy a calendar to see what date it is.<br>
 You can use the online version and write down your plans :)
 
+<a href="https://nervous-lamarr-4f9447.netlify.app/">Click here</a>
 The tech stack is:
 
 <ul>
