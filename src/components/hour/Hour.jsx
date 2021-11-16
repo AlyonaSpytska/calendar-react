@@ -6,15 +6,10 @@ import { formatMins } from "../../../src/utils/dateUtils.js";
 
 const Hour = ({ dataHour, hourEvents, onDeleteEvent, dataDay }) => {
   const actualDataOfDay = new Date().getDate() === dataDay ? true : false;
-  
-  let currentTimeLine;
-  if (new Date().getHours() === dataHour && actualDataOfDay) {
-    currentTimeLine = <RedLine />;
-  } else currentTimeLine = null;
 
   return (
     <div className="calendar__time-slot" data-time={dataHour + 1}>
-      {currentTimeLine}
+      {(new Date().getHours() === dataHour && actualDataOfDay) && <RedLine />}
       {/* if no events in the current hour nothing will render here */}
       {hourEvents.map(({ id, dateFrom, dateTo, title }) => {
         const eventStart = `${new Date(dateFrom).getHours()}:${formatMins(
